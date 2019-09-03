@@ -34,7 +34,7 @@ for (let i = 0; i < 90; i += 10) {
   newDiv.classList.add("box");
 
   //add some style
-  newDiv.style.transform = `rotate(${i}deg)`;
+  newDiv.style.transform = "rotate(" + i + "deg)";
 
   //append child
   artWork2.appendChild(newDiv);
@@ -65,7 +65,7 @@ for (let i = -90; i < 90; i += 20) {
   newDiv.classList.add("box");
 
   //add some style
-  newDiv.style.transform = `translate(${i}px, ${i}px)`;
+  newDiv.style.transform = "translate(" + i + "px," + i + "px)";
 
   //append the child (div) at artwork4
   artWork4.appendChild(newDiv);
@@ -86,8 +86,8 @@ for (let i = 1; i < 512; i *= 2) {
 for (let i = -20; i < 45; i += 5) {
   let newDiv = document.createElement("div");
   newDiv.classList.add("circle");
-  newDiv.style.transform = `translate(${i}-50)`;
-  newDiv.style.transform = `rotate(${i * 4}deg)`;
+  newDiv.style.transform = "translateX(" + (i - 50) + "px";
+  newDiv.style.transform = "rotate(" + i * 4 + "deg)";
 
   artWork6.appendChild(newDiv);
 }
@@ -98,7 +98,7 @@ for (let i = 0; i < 200; i += 10) {
   newDiv.classList.add("circle");
   newDiv.style.width = i + "px";
   newDiv.style.height = i + "px";
-  newDiv.style.transform = `translate(${i}px, ${-i / 2}px)`;
+  newDiv.style.transform = "translate(" + i + "px," + -i / 2 + "px)";
 
   artWork7.appendChild(newDiv);
 }
