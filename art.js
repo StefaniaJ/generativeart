@@ -114,3 +114,19 @@ for (let i = 50; i < 200; i += 10) {
 
   artWork8.appendChild(newDiv);
 }
+
+//Artwork 9
+for (let i = 50; i < 200; i += 30) {
+  let newDiv = document.createElement("div");
+  let secoundNewDiv = document.createElement("div");
+  newDiv.classList.add("box");
+  secoundNewDiv.classList.add("circle");
+  newDiv.style.width = i + "px";
+  newDiv.style.height = i + "px";
+
+  secoundNewDiv.style.width = i + "px";
+  secoundNewDiv.style.height = i + "px";
+
+  artWork9.appendChild(newDiv);
+  artWork9.appendChild(secoundNewDiv);
+}
