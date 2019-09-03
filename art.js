@@ -10,6 +10,18 @@ const artWork8 = document.querySelector("#artwork8");
 const artWork9 = document.querySelector("#artwork9");
 
 //Artwork 1
-// for (let counter = 0; counter < 10; counter++) {
-//   console.log("From 0 to 9: " + counter);
-// }
+for (let i = 100; i < 300; i += 20) {
+  //create a new div
+
+  let newDiv = document.createElement("div");
+  //added a specific class  for div
+
+  newDiv.classList.add("box");
+
+  //set the height and the width
+  newDiv.style.height = i + "px";
+  newDiv.style.width = i + "px";
+
+  //Append the child
+  artWork1.appendChild(newDiv);
+}
