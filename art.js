@@ -81,3 +81,14 @@ for (let i = 1; i < 512; i *= 2) {
 
   artWork5.appendChild(newDiv);
 }
+
+//Artwork 6
+
+for (let i = -20; i < 45; i += 5) {
+  let newDiv = document.createElement("div");
+  newDiv.classList.add("circle");
+  newDiv.style.transform = `translate(${i}-50)`;
+  newDiv.style.transform = `rotate(${i * 4}deg)`;
+
+  artWork6.appendChild(newDiv);
+}
