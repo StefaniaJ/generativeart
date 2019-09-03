@@ -55,3 +55,18 @@ for (let i = 0; i < 200; i += 10) {
   //append the child (div) at artwork3
   artWork3.appendChild(newDiv);
 }
+
+//Artwork 4
+for (let i = -90; i < 90; i += 20) {
+  //create a new div
+  let newDiv = document.createElement("div");
+
+  //add a right class
+  newDiv.classList.add("box");
+
+  //add some style
+  newDiv.style.transform = `translate(${i}px, ${i}px)`;
+
+  //append the child (div) at artwork4
+  artWork4.appendChild(newDiv);
+}
