@@ -70,3 +70,14 @@ for (let i = -90; i < 90; i += 20) {
   //append the child (div) at artwork4
   artWork4.appendChild(newDiv);
 }
+
+//Artwork 5
+
+for (let i = 1; i < 512; i *= 2) {
+  let newDiv = document.createElement("div");
+  newDiv.classList.add("circle");
+  newDiv.style.width = i + "px";
+  newDiv.style.height = i + "px";
+
+  artWork5.appendChild(newDiv);
+}
