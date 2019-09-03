@@ -12,10 +12,9 @@ const artWork9 = document.querySelector("#artwork9");
 //Artwork 1
 for (let i = 100; i < 300; i += 20) {
   //create a new div
-
   let newDiv = document.createElement("div");
-  //added a specific class  for div
 
+  //added a specific class  for div
   newDiv.classList.add("box");
 
   //set the height and the width
@@ -24,4 +23,19 @@ for (let i = 100; i < 300; i += 20) {
 
   //Append the child
   artWork1.appendChild(newDiv);
+}
+
+//Artwork 2
+for (let i = 0; i < 90; i += 10) {
+  //create a new div
+  let newDiv = document.createElement("div");
+
+  //add the specific class
+  newDiv.classList.add("box");
+
+  //change hei,width...
+  newDiv.style.transform = `rotate(${i}deg)`;
+
+  //append child
+  artWork2.appendChild(newDiv);
 }
