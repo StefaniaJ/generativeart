@@ -83,7 +83,6 @@ for (let i = 1; i < 512; i *= 2) {
 }
 
 //Artwork 6
-
 for (let i = -20; i < 45; i += 5) {
   let newDiv = document.createElement("div");
   newDiv.classList.add("circle");
@@ -91,4 +90,27 @@ for (let i = -20; i < 45; i += 5) {
   newDiv.style.transform = `rotate(${i * 4}deg)`;
 
   artWork6.appendChild(newDiv);
+}
+
+//Artwork 7
+for (let i = 0; i < 200; i += 10) {
+  let newDiv = document.createElement("div");
+  newDiv.classList.add("circle");
+  newDiv.style.width = i + "px";
+  newDiv.style.height = i + "px";
+  newDiv.style.transform = `translate(${i}px, ${-i / 2}px)`;
+
+  artWork7.appendChild(newDiv);
+}
+
+//Artwork 8
+for (let i = 50; i < 200; i += 10) {
+  let newDiv = document.createElement("div");
+  newDiv.classList.add("box");
+  newDiv.style.width = i + "px";
+  newDiv.style.height = i + "px";
+  newDiv.style.transform = `translate(${i / 2}px)`;
+  newDiv.style.transform = `rotate(${i}deg)`;
+
+  artWork8.appendChild(newDiv);
 }
